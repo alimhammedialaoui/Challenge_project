@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Livreur</title>
+    <link rel="stylesheet" href="../../static/css/style_livreur.css">
+</head>
+<body>
+        <header>
+            
+                <div class="menu">       
+                <nav class='cf'>
+                <ul class='cf'>
+                        <img src="../../static/images/logo.png" alt="logo" id="logo"> 
+                    <li><a href="#">FAQ</a></li>
+                    <li> <a href='#' id="about">Qui sommes nous?</a></li>
+                    <li> <a href='home.html'>Accueil</a></li>
+                    <form action="home.html" method="POST">
+                        <select name="Langue" id="lang" class="select">
+                            <option>AR <img id="maroc" src="../../static/images/index.png" alt="maroc"> </option>
+                            <option>FR</option>
+                            <option>ANG</option>
+                        </select>
+                    </form>
+                </ul>            
+                  </nav>
+                </div>
+                </header>
+    <div class="page">
+    <div id="Connexion">
+        <fieldset>
+        <legend><h2>Connexion</h2></legend>
+        <p id="username">Nom d'utilisateur : <input type="text"> </p>
+        <p id="mdp">Mot de passe : <input type="password"></p>
+    </fieldset>
+    </div>
+        
+    <div id="Inscription">
+        <fieldset>
+        <legend><h2>Inscription</h2></legend>
+        <p id="name">Nom : <input type="text"></p>
+        <p id="firstname">Prenom : <input type="text"></p>
+        <p id="tel">Numéro de téléphone : <input type="tel"></p>
+        <p id="mail">Email : <input type="email"></p>
+        <p id="mdp">Mot de passe : <input type="password"></p>
+        <p id="mdp2">Confrimer votre mot de passe : <input type="password"></p>
+        <p id="permis">Numéro de permis : <input type="tel"></p>
+        <p id="carte_grise">Numéro de la carte grise : <input type="number"></p>
+        <p id="profession">Profession : <input type="text"></p>
+        <p id="cin">C.I.N : <input type="number"></p>
+        <p id="adresse">Adresse : <input type="text"></p>
+        <form action="Livreur.html" method="post">
+                <fieldset>
+                  <legend>Avez-vous un trajet quotidien?</legend>
+                  <input type="radio" name="radio" id="radio_btn">
+                  <label for="radio" id="radio1">Oui</label>
+                  <input type="radio" name="radio" id="radio">
+                  <label for="radio" id="radio2">Non</label>
+                </fieldset>
+              </form>
+              
+        </p>  
+        <p id="checkbox"><input type="checkbox"> <a href="Conditions_generales">J'accepte les conditions générales</a>  </p>
+    </fieldset>
+    </div>
+</div>
+<script
+        src="http://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+</body>
+<footer>
+    <div id="foot">
+            <p id="conditions"><a href="#">Conditions légales</a></p>
+            <p id="contact"><a href="#">Contacts</a></p>
+            <p id="politique"><a href="#">Politique de confidentialité</a></p>
+    </div>
+    
+</footer>
+</html>
