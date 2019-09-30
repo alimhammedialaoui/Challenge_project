@@ -15,6 +15,17 @@ body {
     display: flex;
     flex-direction: row;
   }
+  .btn_connexion,.btn_inscription{
+    float: right;
+    border-radius: 5px;
+    padding: 1em;
+    margin-top: 1vh;
+    font-weight: bold;
+    background-color: rgb(248, 227, 202);
+  }
+  .btn_connexion:hover,.btn_inscription:hover{
+    background-color: #aaa;
+  }
 #logo{
   height:3em;
   width:15em;
