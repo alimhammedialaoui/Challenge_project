@@ -58,15 +58,14 @@
         <p id="profession">Profession : <input type="text"></p>
         <p id="cin">C.I.N : <input type="number"></p>
         <p id="adresse">Adresse : <input type="text"></p>
-        <form action="Livreur.html" method="post">
-                <fieldset>
+        <form action="Livreur.html" method="post" name="formulaireDynamique">
+                
                   <legend>Avez-vous un trajet quotidien?</legend>
-                  <input type="radio" name="radio" id="radio_btn" onclick="check();">
+                  <input type="radio" name="radio" id="radio_btn" onclick="ajout(this);">
                   <label for="radio" id="radio1">Oui</label>
                   <input type="radio" name="radio" id="radio">
                   <label for="radio" id="radio2">Non</label>
-                  
-                </fieldset>
+                
               </form>
               
         </p>  
