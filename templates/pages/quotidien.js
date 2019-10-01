@@ -34,9 +34,9 @@ function ajout(element){
         
         bloc.appendChild(label2);
         bloc.appendChild(champ2);
-        formulaire.insertBefore(ajout, element);
-        
-        formulaire.insertBefore(bloc, element);
+
+        formulaire.insertBefore(bloc,element);
+    
     }
  }
  function suppression(element){
