@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Livreur</title>
     <link rel="stylesheet" href="../../static/css/style_livreur.css">
+    <script type="text/javascript" src="quotidien.js"></script>
+    
 </head>
 <body>
+        
         <header>
             
                 <div class="menu">       
@@ -58,10 +61,11 @@
         <form action="Livreur.html" method="post">
                 <fieldset>
                   <legend>Avez-vous un trajet quotidien?</legend>
-                  <input type="radio" name="radio" id="radio_btn">
+                  <input type="radio" name="radio" id="radio_btn" onclick="check();">
                   <label for="radio" id="radio1">Oui</label>
                   <input type="radio" name="radio" id="radio">
                   <label for="radio" id="radio2">Non</label>
+                  
                 </fieldset>
               </form>
               
@@ -77,7 +81,7 @@
         src="http://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>
-<script type="text/javascript" src="quotidien.js"></script>
+
 </body>
 <footer>
     <div id="foot">
