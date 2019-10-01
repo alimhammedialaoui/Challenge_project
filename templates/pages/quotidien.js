@@ -21,7 +21,7 @@ function ajout(element){
         champ2.type="type";
         label2.innerText="\n Destination:";
             
-        var sup = document.createElement("input");
+        
         
         
         // Ajout de l'événement onclick
