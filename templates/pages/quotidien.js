@@ -1,6 +1,9 @@
+var cpt=0;
 function ajout(element){
     var type = document.getElementById("radio_btn");
-    if(type.checked){
+    
+    if(cpt==0){
+        cpt=1;
         var formulaire = window.document.formulaireDynamique;
         // On clone le bouton d'ajout
         var ajout = element.cloneNode(true);
