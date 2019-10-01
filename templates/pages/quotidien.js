@@ -15,11 +15,11 @@ function ajout(element){
         // Les valeurs encodée dans le formulaire seront stockées dans un tableau
         champ1.name = "champs[]";
         champ1.type = "text";
-        label1.innerText="Ville:";
+        label1.innerText="Ville:\t";
         
         champ2.name="champs[]";
         champ2.type="type";
-        label2.innerText="\n Destination:";
+        label2.innerText="\n Destination:\t";
             
         
         
@@ -34,6 +34,7 @@ function ajout(element){
         
         bloc.appendChild(label2);
         bloc.appendChild(champ2);
+        
 
         formulaire.insertBefore(bloc,element);
     
