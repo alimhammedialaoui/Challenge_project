@@ -36,7 +36,7 @@ function ajout(element){
         bloc.appendChild(champ2);
         
 
-        formulaire.insertBefore(bloc,element);
+        formulaire.insertBefore(bloc,element.nextSibling.nextSibling.nextSibling.nextSibling.nextSibling.nextSibling.nextSibling);
     
     }
  }
