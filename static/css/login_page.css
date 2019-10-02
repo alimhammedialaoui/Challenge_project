@@ -31,3 +31,13 @@
     border-radius: 30px;
     margin: 6% auto;
 }
+
+.toggle-btn
+{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border:0;
+    outline: none;
+    position: relative;
+}
