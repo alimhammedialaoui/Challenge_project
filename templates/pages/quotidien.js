@@ -21,8 +21,8 @@ function ajout(element){
         champ2.type="type";
         label2.innerText="\n Destination:\t";
          
-        champ1.style.cssText="width:50%;padding:5px 5px;margin:8px 0;box-sizing: border-box;border-radius: 5px;border:solid;border-color: #aaa;border-width: 1px;";
-        champ2.style.cssText="width:50%;padding:5px 5px;margin:8px 0;box-sizing: border-box;border-radius: 5px;border:solid;border-color: #aaa;border-width: 1px;";
+        champ1.style.cssText="width: 100%;padding: 10px 0;margin: 5px 0;border-left: 0;border-top:0;border-right: 0;border-bottom: 1px solid #999;outline: none;background: transparent;";
+        champ2.style.cssText="width: 100%;padding: 10px 0;margin: 5px 0;border-left: 0;border-top:0;border-right: 0;border-bottom: 1px solid #999;outline: none;background: transparent;";
         
         
         // Ajout de l'événement onclick
