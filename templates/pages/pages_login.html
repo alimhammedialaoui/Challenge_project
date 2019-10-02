@@ -12,17 +12,46 @@
         <div class="form-box">
             <div class="button-box">
                 <div id="btn"></div>
-                <button type="button" class="toggle-btn">Connexion</button>
-                <button type="button" class="toggle-btn">Inscription</button>
+                <button type="button" class="toggle-btn" onclick="login();">Connexion</button>
+                <button type="button" class="toggle-btn" onclick="register();">Inscription</button>
             </div>
-                <form class="input-group">
-                    <input type="text" class="input-field" placeholder="Nom d'utilisateur" required>
-                    <input type="text" class="input-field" placeholder="Mot de passe" required>
+                <form id="login" class="input-group">
+                    <input type="text" class="input-field" placeholder="Email" required>
+                    <input type="password" class="input-field" placeholder="Mot de passe" required>
                     <input type="checkbox" class="check-box"><span>Rester connecté</span>
                     <button type="submit" class="submit-btn">Se connecter</button>
+                </form>
+                <form id="register" class="input-group">
+                        <input type="text" class="input-field" placeholder="Nom" required>
+                        <input type="text" class="input-field" placeholder="Prenom" required>
+                        <input type="text" class="input-field" placeholder="Tel" required>
+                        <input type="email" class="input-field" placeholder="Email" required>
+                        <input type="password" class="input-field" placeholder="Mot de passe" required>
+                        <input type="password" class="input-field" placeholder="Confirmer mot de passe" required>
+                        <input type="text" class="input-field" placeholder="Permis de conduite" required>
+                        <input type="text" class="input-field" placeholder="Carte grise" required>
+                        <input type="text" class="input-field" placeholder="C.I.N" required>
+                        <input type="text" class="input-field" placeholder="Profession" required>
+                        <input type="text" class="input-field" placeholder="Adresse" required>
+                        <input type="text" class="input-field" placeholder="Mot de passe" required>
+                        <input type="radio" name="radio" id="radio_btn" onclick="ajout(this);"> <span>Avez-vous un trajet quotidien?</span>
+                        <label for="radio" id="radio1">Oui</label>
+                        <input type="radio" name="radio" id="radio_sup" >
+                        <label for="radio" id="radio2">Non</label>
+                        <button type="submit" class="submit-btn">S'enregistrer</button>
                 </form>
         </div>
         
     </div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+        function register(){
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="105px";
+        }
+    </script>
 </body>
 </html>
