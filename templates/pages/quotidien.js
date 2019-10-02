@@ -40,13 +40,15 @@ function ajout(element){
     
     }
  }
+ cpt=0;
  function suppression(element){
- var formulaire = window.document.formulaireDynamique;
+     
+     if(cpt==0){
+            cpt=1;
+            var formulaire = window.document.formulaireDynamique;
       
- // Supprime le bouton d'ajout
- formulaire.removeChild(element.previousSibling);
- // Supprime le champ
- formulaire.removeChild(element.nextSibling);
- // Supprime le bouton de suppression
- formulaire.removeChild(element);
+            // Supprime le bouton d'ajout
+            formulaire.removeChild(element.nextSibling.nextSibling.nextSibling); 
+     }
+    
 }
