@@ -127,3 +127,13 @@ span
 {
     left:450px;
 }
+
+a:link{
+    text-decoration: none;
+    color: #777;
+  }
+
+  #accept
+  {
+      margin-top: 20px;
+  }
