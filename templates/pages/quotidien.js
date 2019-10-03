@@ -19,7 +19,7 @@ function ajout(element){
         
         champ2.name="champs[]";
         champ2.type="type";
-        champ1.placeholder ="Destination";
+        champ2.placeholder ="Destination";
 
         
          
@@ -27,7 +27,7 @@ function ajout(element){
         champ2.style.cssText="width: 100%;padding: 10px 0;margin: 5px 0;border-left: 0;border-top:0;border-right: 0;border-bottom: 1px solid #999;outline: none;background: transparent;";
         
         
-        // Ajout de l'événement onclick
+        
         
         
         // On crée un nouvel élément de type "p" et on insère le champ l'intérieur.
