@@ -159,6 +159,7 @@ body {
   }
   #checkbox a{
     color:rgb(230, 230, 230);
+    transform: scale(1.5);
   }
 
   input[type=text],input[type=number],input[type=email],input[type=tel]{
@@ -170,6 +171,11 @@ body {
     border:solid;
     border-color: #aaa;
     border-width: 1px;
+  }
+
+  input[type=radio]
+  {
+    transform: scale(1.5);
   }
 
   input[type=password]{

@@ -15,16 +15,18 @@ function ajout(element){
         // Les valeurs encodée dans le formulaire seront stockées dans un tableau
         champ1.name = "champs[]";
         champ1.type = "text";
-        label1.innerText="Ville:\t";
+        label1.innerText="Ville";
         
         champ2.name="champs[]";
         champ2.type="type";
-        label2.innerText="\n Destination:\t";
+        label2.innerText="Destination";
          
         champ1.style.cssText="width: 100%;padding: 10px 0;margin: 5px 0;border-left: 0;border-top:0;border-right: 0;border-bottom: 1px solid #999;outline: none;background: transparent;";
         champ2.style.cssText="width: 100%;padding: 10px 0;margin: 5px 0;border-left: 0;border-top:0;border-right: 0;border-bottom: 1px solid #999;outline: none;background: transparent;";
         
-        
+        label1.style.cssText="width: 100%;padding: 10px 0;margin: 5px 0;border-left: 0;border-top:0;border-right: 0;border-bottom: 1px solid #999;outline: none;background: transparent;";
+        label2.style.cssText="width: 100%;padding: 10px 0;margin: 5px 0;border-left: 0;border-top:0;border-right: 0;border-bottom: 1px solid #999;outline: none;background: transparent;";
+
         // Ajout de l'événement onclick
         
         
