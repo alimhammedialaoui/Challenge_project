@@ -9,7 +9,7 @@
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #808080;
+    background:white;
     margin: 0;
     line-height: 0;
     color:#fff;
@@ -67,11 +67,11 @@ a .btn .btn-primary{
   #showcase {
       margin: 0;
       padding: 0;
-      background: url('../images/abstract-painting-acrylic-paint-art-1912832.jpg') no-repeat center/cover;
+      background: url('../images/PBPFQP1.png') no-repeat center/cover;
       width: 100%;
       height: 100vh;
       position: relative;
-      overflow: hidden;
+      
   }
   #showcase .container {
       
@@ -184,9 +184,9 @@ a .btn .btn-primary{
   }
   footer{
     color:rgb(71, 70, 70);
-    background-color:white;
+    background:linear-gradient(to right,#ff105f,#ffad06);
     text-align: center;
-    margin-top: 8rem;
+    margin-top: 1rem;
     padding-top: 2rem;  
     padding-bottom: 2rem;
   }
@@ -201,6 +201,84 @@ a .btn .btn-primary{
   #politique{
     margin-left: 2rem;
   }
+
+
+
+
+  .container2{
+    
+    padding: 2px;
+    text-align: center;
+    color: white;
+    margin-right: 50%;
+    margin-top: 50px;
+  }
+  .container2 p {
+    max-width: 100px;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .container2 h1
+  {
+    margin-top: 15px;
+    color:#2f3542;
+    float: left;
+    margin-left: 20px;
+  }
+  .email-box{
+    margin-bottom: 1.5rem;
+    height: 40px;
+    justify-content: center;
+    display: flex; /*its better to use inline-flex*/
+  }
+  .email-box i{
+    background: #2f3542;
+    width: 40px;
+    line-height: 40px;
+  }
+  .tbox,.btn3{
+    border: none;
+    outline: none;
+  }
+  .tbox{
+    width: 0px;
+    transition: 0.6s;
+  }
+  .email-box:hover > .tbox,.tbox:focus{
+    width: 260px;
+    padding: 0 10px;
+  }
+  .btn3{
+    background: #2f3542;
+    color: white;
+    padding: 0 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   @media screen and (max-width: 580px) {
     h1 {
       font-size: 2.8em;
