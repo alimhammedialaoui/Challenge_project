@@ -59,6 +59,7 @@ a .btn .btn-primary{
 .btn-primary:hover
 {
   background:linear-gradient(to right,#ff105f,#ffad06);
+  border-color: transparent;
 }
 #boutons{
   padding-top: 5rem;
@@ -164,6 +165,7 @@ a .btn .btn-primary{
     padding: 25px;
     color: rgb(95, 95, 95);
     text-decoration: none;
+    transition: .5s;
     
   }
   #about{
