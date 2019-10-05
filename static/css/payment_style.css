@@ -1,13 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900);
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,200,300,500,600,700,900);
-.container {
+.container_payment {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   flex-direction: column;
+  opacity:0;
 }
-
+.container_payment:
 * {
   box-sizing: border-box;
 }
@@ -278,4 +279,9 @@ input[type=radio]:checked ~ .radio::before {
 .button button i {
   font-size: 1.2rem;
   margin-right: 5px;
+}
+
+#page_payment
+{
+    left: 400px;
 }

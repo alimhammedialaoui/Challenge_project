@@ -12,6 +12,8 @@
     background-position: center;
     background-size: cover;
     position: absolute;
+    display: flex;
+    flex-direction: row; 
 }
 .form-box
 {
@@ -22,7 +24,12 @@
     background: #fff;
     padding: 5px;
     overflow: hidden;
+    border-radius: 10px;
     
+}
+#formbox
+{
+    transition: .5s;
 }
 
 .button-box
@@ -60,7 +67,7 @@
 
 .input-group
 {
-    top: 100px;
+    top: 120px;
     position: absolute;
     width: 280px;
     transition:.5s;

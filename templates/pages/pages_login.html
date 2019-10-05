@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="../../static/css/login_page.css">
     <title>Livreur</title>
     <script type="text/javascript" src="quotidien.js"></script>
-    
+    <link rel="stylesheet" href="../../static/css/payment_style.css">
     
 </head>
 <body>
         
     <div class="hero" >
-        <div id="formbox" class="form-box">
+        <div id="formbox" class="form-box" style="margin-left:600px; ">
             <div class="button-box">
                 <div id="btn"></div>
                 <button type="button" class="toggle-btn" onclick="login();">Connexion</button>
@@ -47,15 +47,98 @@
                         <label for="radio" id="radio1" style="font-size: 12px">Oui</label>
                         <input type="radio" name="radio" id="radio_sup" required >
                         <label for="radio" id="radio2" style="font-size: 12px">Non</label><br><br>
-                        <a href="payment_method.html" style="font-size:12px;text-decoration:underline;color:rgb(35, 178, 226);">
+                        <button  
+                        style="font-size:12px;text-decoration:underline;color:rgb(35, 178, 226);border:none;background-color: transparent;" 
+                        onclick="afficher();">
                             Ajouter un moyen de reception de paiement
-                        </a>
-
+                        </button>
+                        
                         <p id="accept"><input type="checkbox"> <a href="Conditions_generales">J'accepte les conditions générales</a>  </p>
                         <button type="submit" class="submit-btn2">S'enregistrer</button>
                         <button type="button" class="submit-btn2"><a href="home.html" style="color: black">Retourner à l'accueil</a></button>
                         
                 </form>
+                
+        </div>
+        <div>
+        <div id="page_payment" class="container_payment" style="opacity: 0;transition: .5s;">
+
+                <div class="card__container">
+                    <div class="card">
+                        
+                        <div class="row credit">
+                            <div class="left">
+                                
+                                
+                                <label for="cd">Debit/ Credit Card</label>
+                            </div>
+                            <div class="right">
+                                <img src="../../static/images/Visa-logo-1.png" alt="visa" style="width: 70px;height:45px;margin-bottom: 5px;"/>
+                                <img src="../../static/images/Mastercard-Download-PNG.png" alt="mastercard" style="width: 80px;height:55px;"/>
+                                
+                            </div>
+                        </div>
+                        <div class="row cardholder">
+                            <div class="info">
+                                <label for="cardholdername">Name</label>
+                                <input placeholder="e.g. Richard Bovell" id="cardholdername" type="text" />
+                            </div>
+                        </div>
+                        <div class="row number">
+                            <div class="info">
+                                <label for="cardnumber">Card number</label>
+                                <input id="cardnumber" type="text" pattern="[0-9]{16,19}" maxlength="19" placeholder="8888-8888-8888-8888"/>
+                            </div>
+                        </div>
+                        <div class="row details">
+                            <div class="left">
+                                <label for="expiry-date">Expiry</label>
+                                <select id="expiry-date">
+                                    <option>MM /</option>
+                                    <option value="1">01</option>
+                                    <option value="2">02</option>
+                                    <option value="3">03</option>
+                                    <option value="4">04</option>
+                                    <option value="5">05</option>
+                                    <option value="6">06</option>
+                                    <option value="7">07</option>
+                                    <option value="8">08</option>
+                                    <option value="9">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                                
+                                    <select id="expiry-date">
+                                    <option>YYYY</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2030">2030</option>
+                                </select>
+                            </div>
+                            <div class="right">
+                                <label for="cvv">CVC/CVV</label>
+                                <input type="text" maxlength="4" placeholder="123"/>
+                                <span data-balloon-length="medium" data-balloon="The 3 or 4-digit number on the back of your card." data-balloon-pos="up">i</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="button">
+                    <button type="submit"> Confirm</button>
+                </div> -->
+            </div>
         </div>
         
     </div>
@@ -65,6 +148,7 @@
         var z = document.getElementById("btn");
         var w = document.getElementById("formbox");
         var u = document.getElementById("toggle-btn");
+        var a = document.getElementById("page_payment");
         function register(){
             x.style.left="-400px";
             y.style.left="50px";
@@ -76,6 +160,12 @@
             y.style.left="450px";
             z.style.left="10px";
             w.style.overflowY=null;
+            a.style.opacity="0";
+        }
+        
+        
+        function afficher(){
+            a.style.opacity="1"; 
         }
     </script>
     <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
