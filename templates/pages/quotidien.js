@@ -1,5 +1,5 @@
 var cpt=0;
-function ajout(element){
+function ajout_input(element){
     var type = document.getElementById("radio_btn");
     
     if(cpt==0){
