@@ -46,7 +46,11 @@
                         <input type="radio" name="radio" id="radio_btn" onclick="ajout_input(this);"  required > 
                         <label for="radio" id="radio1" style="font-size: 12px">Oui</label>
                         <input type="radio" name="radio" id="radio_sup" required >
-                        <label for="radio" id="radio2" style="font-size: 12px">Non</label>
+                        <label for="radio" id="radio2" style="font-size: 12px">Non</label><br><br>
+                        <a href="payment_method.html" style="font-size:12px;text-decoration:underline;color:rgb(35, 178, 226);">
+                            Ajouter un moyen de reception de paiement
+                        </a>
+
                         <p id="accept"><input type="checkbox"> <a href="Conditions_generales">J'accepte les conditions générales</a>  </p>
                         <button type="submit" class="submit-btn2">S'enregistrer</button>
                         <button type="button" class="submit-btn2"><a href="home.html" style="color: black">Retourner à l'accueil</a></button>
@@ -74,6 +78,7 @@
             w.style.overflowY=null;
         }
     </script>
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 </body>
 
 </html>
