@@ -14,6 +14,7 @@
     position: absolute;
     display: flex;
     flex-direction: row; 
+    
 }
 .form-box
 {
@@ -25,12 +26,10 @@
     padding: 5px;
     overflow: hidden;
     border-radius: 10px;
-    
-}
-#formbox
-{
+    opacity: 0;
     transition: .5s;
 }
+
 
 .button-box
 {

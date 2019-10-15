@@ -13,7 +13,7 @@
 <body>
         
     <div class="hero" >
-        <div id="formbox" class="form-box" style="margin-left:600px; ">
+        <div id="formbox" class="form-box" style="margin-left:600px;" onmousemove="change_opacity();">
             <div class="button-box">
                 <div id="btn"></div>
                 <button type="button" class="toggle-btn" onclick="login();">Connexion</button>
@@ -166,6 +166,9 @@
         
         function afficher(){
             a.style.opacity="1"; 
+        }
+        function change_opacity(){
+            w.style.opacity="1";
         }
     </script>
     <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
