@@ -15,7 +15,25 @@ body {
     line-height: 0;
     color:#fff;
   }
-  
+.qui_sommes_nous
+{
+    background-color: white; 
+    width: 50%;
+    height: 40%;
+    margin-top:20%;
+    margin-left: 25%;
+    position: center;
+    opacity: 0.75;
+    color: #000;
+    line-height: 2.3;
+    overflow: scroll;
+} 
+.text_container
+{
+  margin-top:3%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
   #logo{
     height:3em;
     width:15em;
