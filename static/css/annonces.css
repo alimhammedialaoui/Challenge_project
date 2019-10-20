@@ -299,7 +299,8 @@ a .btn .btn-primary{
     
 .person1
 {
-    margin-top: 20%;
+    margin-top: 20rem;
+    color: black;
 }
 .card1 {
     
@@ -309,7 +310,11 @@ a .btn .btn-primary{
     text-align: center;
     font-family: arial;
     background-color: whitesmoke;
-    height: 200px;
+    height: 300px;
+  }
+  .card1 > h1
+  {
+      top:40px;
   }
   .card-name
   {
@@ -318,6 +323,8 @@ a .btn .btn-primary{
   .title {
     color: grey;
     font-size: 18px;
+    margin-top: 20px;
+    padding-top: 20px;
   }
   
   button {
@@ -331,7 +338,7 @@ a .btn .btn-primary{
     cursor: pointer;
     width: 100%;
     font-size: 18px;
-    margin-top:110px;
+    margin-top:194px;
   }
   
   
