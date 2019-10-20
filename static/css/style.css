@@ -27,6 +27,7 @@ body {
     color: #000;
     line-height: 2.3;
     overflow: scroll;
+    border-radius: 5px;
 } 
 .text_container
 {
