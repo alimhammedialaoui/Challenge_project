@@ -43,6 +43,7 @@ function ajout_input(element){
     
     }
  }
+ 
  cpt=0;
  function suppression(element){
      
