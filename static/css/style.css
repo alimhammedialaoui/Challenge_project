@@ -300,11 +300,89 @@ a .btn .btn-primary{
 
     
 
+.cadre
+{
+  position: absolute;
+  top:15%;
+  left: 17%;
+  width: 70%;
+  height: 80%;
+  background-color: white;
+  border-radius: 10px;
+  display: inline-block;
+  
+}
 
-      
+#img
+{
+  position: absolute;
+  top: 10%;
+  left: 2%;
+  width: 30%;
+}
+ .photo
+ {
+   display:inline-block ;
+ }     
 
 
 
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}     
+
+.target {
+  position: absolute;
+  top:25%;
+  left: 55%;
+  color: grey;
+  font-size: 25px;
+}
+
+.name
+{
+  position: absolute;
+  top: 10%;
+  left:59%;
+  color:black;
+  font-size: 30px;
+}
+.des
+{
+  position: absolute;
+  top: 35%;
+  left:40%;
+  color: #000;
+  font-weight: bold;
+}
+.description
+{
+  position: absolute;
+  top: 39%;
+  left:40%;
+  color: #000;
+}
+
+.checked {
+  color: orange;
+  position: relative;
+  top: 21%;
+  left:61%;
+  
+}
+.map
+{
+  position: absolute;
+  top: 45%;
+  left: 48%;
+}
 
 
 
