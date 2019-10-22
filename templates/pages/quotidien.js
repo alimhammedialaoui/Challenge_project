@@ -43,7 +43,10 @@ function ajout_input(element){
     
     }
  }
- 
+ function obscuritydown(){
+    var hidden=document.getElementsByClassName("is-hidden");
+    hidden.style.cssText="opacity:0.5";
+ }
  cpt=0;
  function suppression(element){
      

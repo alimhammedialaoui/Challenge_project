@@ -362,7 +362,12 @@ a .btn .btn-primary{
         -webkit-transform: rotate(-45deg);
       }      
 
-
+.titre
+{
+      margin-top: 15%;
+      color:white;
+      font-size: 20px;
+}
 
 
 
